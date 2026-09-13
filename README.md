@@ -1,6 +1,8 @@
-# Heartbeat Yuanli MCP
+# 网易春风 · 心跳元力｜使用 AI 控制你的设备
 
-一个本地 MCP stdio 服务，通过 Bluetooth Low Energy（BLE）直接控制已授权的心跳元力 DokiDoki `DK-META2` 设备。
+让 AI 成为你的设备秘书：通过自然语言和本地 Bluetooth Low Energy（BLE），控制心跳元力 DokiDoki `DK-META2` 设备的震动、伸缩与旋转。
+
+这是一个非官方、本地优先的 MCP 实现，主打隐私、低延迟和可控的设备操作。
 
 本项目是非官方实现，不读取账号、不调用云端控制接口，也不包含官方客户端源码、安装包或设备固件。DokiDoki、心跳元力及相关名称归其各自权利人所有；本项目与设备厂商没有隶属或背书关系。
 

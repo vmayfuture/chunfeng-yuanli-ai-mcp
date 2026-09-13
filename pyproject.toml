@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "heartbeat-yuanli-mcp"
 version = "0.1.0"
-description = "Local MCP server for direct Heartbeat Yuanli DokiDoki BLE control"
+description = "Unofficial local MCP server for AI control of Heartbeat Yuanli DokiDoki BLE devices"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {file = "LICENSE"}
