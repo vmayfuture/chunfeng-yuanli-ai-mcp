@@ -1,4 +1,4 @@
-# 网易春风 · 心跳元力｜使用 AI 控制你的设备
+# 网易春风 · 心跳元力 MCP｜使用 AI 控制你的设备
 
 让 AI 成为你的设备秘书：通过自然语言和本地 Bluetooth Low Energy（BLE），控制心跳元力 DokiDoki `DK-META2` 设备的震动、伸缩与旋转。
 
