@@ -1,6 +1,8 @@
-# 网易春风 · 心跳元力 MCP｜使用 AI 控制你的设备
+# chunfeng-yuanli-ai-mcp — 心跳元力 DokiDoki DK-META2 本地 BLE MCP 控制
 
-让 AI 成为你的设备秘书：通过自然语言和本地 Bluetooth Low Energy（BLE），控制心跳元力 DokiDoki `DK-META2` 设备的震动、伸缩与旋转。
+[中文](README.md) | [English](README.en.md)
+
+**chunfeng-yuanli-ai-mcp** 是一个本地 Bluetooth Low Energy（BLE）MCP 服务器，让 AI Agent 通过自然语言控制心跳元力 DokiDoki `DK-META2` 设备的震动、伸缩与旋转。
 
 这是一个非官方、本地优先的 MCP 实现，主打隐私、低延迟和可控的设备操作。
 
@@ -46,6 +48,8 @@ DK-META2
 ## 安装
 
 ```powershell
+git clone https://github.com/vmayfuture/chunfeng-yuanli-ai-mcp.git
+cd chunfeng-yuanli-ai-mcp
 py -3.11 -m venv .venv
 & .\.venv\Scripts\python.exe -m pip install -e .
 ```
@@ -156,3 +160,19 @@ checksum = (-(command + value)) & 0xFF
 ## 贡献
 
 提交问题或改动前请阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)。涉及安全、设备异常动作或潜在隐私泄露的问题，请优先阅读 [SECURITY.md](./SECURITY.md)。
+
+## 使用场景与常见问题
+
+下面是调用示例，不是实机测试记录。先在设备旁检查连接与停止功能：
+
+```text
+请使用 heartbeat-yuanli 扫描支持的设备，只报告列表，不发送动作。
+```
+
+```text
+连接我明确选定的 DK-META2，查看连接状态，先验证 stop_device，再断开。
+```
+
+- **支持其他型号吗？** 当前只验证 DK-META2，前缀匹配不能证明兼容。
+- **状态证明实际输出吗？** 状态只表示 MCP 持有的连接，不能替代在场观察。
+- **连接失败怎么办？** 检查蓝牙权限、距离、电量，释放官方客户端连接，再运行 `--doctor`。
